@@ -10,9 +10,8 @@ const routes:Routes=[
     path: 'dashboard',
     component: PagesComponent,
     children: [
-
-      { path: '/progress', component: ProgressComponent },
-      { path: '/grafica1', component: Grafica1Component },
+      { path: 'progress', component: ProgressComponent },
+      { path: 'grafica1', component: Grafica1Component },
       { path: '', component:DashboardComponent},
     ]
   },

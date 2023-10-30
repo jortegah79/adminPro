@@ -1,1 +1,29 @@
-<p>grafica1 works!</p>
+<div class="row">
+  <div class="col-12 col-md-6">
+   <component-donut titulo="ventas"></component-donut>
+  </div>
+
+  <div class="col-12 col-md-6">
+    <component-donut
+    titulo="compras"
+     [labels]="labels1"
+     [data1]="data1">
+    </component-donut>
+   </div>
+
+
+</div>
+
+<div class="row">
+  <div class="col-12 col-md-6">
+    <component-donut
+    titulo="descuentos"
+    ></component-donut>
+  </div>
+
+  <div class="col-12 col-md-6">
+    <component-donut
+    titulo="ventas2"
+    ></component-donut>
+   </div>
+</div>

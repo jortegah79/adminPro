@@ -7,10 +7,8 @@ import { PagesRoutingModule } from './pages/pages-routing.module';
 import { AuthRoutingModule } from './auth/auth-routing.module';
 
 const routes: Routes = [
-  // { path: 'login', component: LoginComponent },
-  // { path: 'register', component: RegisterComponent },
-  // { path: 'pages', loadChildren: () => import("./pages/pages.module").then(m => m.PagesModule) },
-   { path: '', redirectTo:'/dashboard',pathMatch:'full'},
+
+  { path: '', redirectTo: 'dashboard', pathMatch: 'full' },
   { path: '**', component: NoPageFoundComponent },
 ]
 

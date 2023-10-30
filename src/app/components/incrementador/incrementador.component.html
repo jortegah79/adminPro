@@ -1,0 +1,31 @@
+<div class="card">
+  <div class="card-body">
+
+    <div class="input-group  mb-3 ">
+      <div class="input-group-prepend ">
+        <button [ngClass]="btnClass" type="button" (click)="cambiarValor(-5)">
+          <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-dash-lg"
+            viewBox="0 0 16 16">
+            <path fill-rule="evenodd" d="M2 8a.5.5 0 0 1 .5-.5h11a.5.5 0 0 1 0 1h-11A.5.5 0 0 1 2 8Z" />
+          </svg>
+        </button>
+      </div>
+      <div class="custom-file">
+        <input type="number" class="text-end py-3 form-control" min="0" max="100" id="inputGroupFile03"
+          (ngModelChange)="onChange($event)" [(ngModel)]="progreso"
+          [ngClass]="{'is-invalid':progreso>100 || progreso<0 }">
+      </div>
+      <button [ngClass]="btnClass" for="inputGroupFile03" (click)="cambiarValor(+5)">
+        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-plus-lg"
+          viewBox="0 0 16 16">
+          <path fill-rule="evenodd"
+            d="M8 2a.5.5 0 0 1 .5.5v5h5a.5.5 0 0 1 0 1h-5v5a.5.5 0 0 1-1 0v-5h-5a.5.5 0 0 1 0-1h5v-5A.5.5 0 0 1 8 2Z" />
+        </svg></button>
+
+    </div>
+
+  </div>
+</div>
+
+
+<!-- [(ngModel)]="progreso"  -->

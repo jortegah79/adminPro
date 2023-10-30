@@ -11,12 +11,14 @@ import { NoPageFoundComponent } from './no-page-found/no-page-found.component';
   declarations: [
     AppComponent,
     NoPageFoundComponent,
+
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     PagesModule,
-    AuthModule
+    AuthModule,
+
 
   ],
   providers: [],
