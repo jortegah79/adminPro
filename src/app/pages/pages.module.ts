@@ -17,6 +17,7 @@ import { ComponentsModule } from '../components/components.module';
     Grafica1Component,
     PagesComponent,
     ProgressComponent,
+
   ],
   imports: [
     CommonModule,
@@ -30,6 +31,7 @@ import { ComponentsModule } from '../components/components.module';
     Grafica1Component,
     PagesComponent,
     ProgressComponent,
+
   ]
 })
 export class PagesModule { }
